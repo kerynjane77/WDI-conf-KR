@@ -3,14 +3,12 @@ html {
   background: url('../images/WDI-conf-bg.svg');
 }
 
-banner {
-
-}
-
 #contents {
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
 }
+
+/* NAV  */
 
 nav {
   display: inline;
@@ -18,36 +16,81 @@ nav {
   right: 0;
   position: fixed;
   background-color: #2F4F4F;
-  height: 85px;
-  width: 70px;
+  height: 120px;
+  width: 80px;
+  padding: 5px;
 }
 
 ul, li {
   font-size: 0.95em;
   list-style: none;
   -webkit-padding-start: 0;
-  -webkit-margin-before: 3px;
+  -webkit-margin-before: 7px;
   padding: 0 2px;
+  color: white;
 }
+
+/* headings and type */
 
 h1 {
   display: inline-block;
-  -webkit-margin-before: 0.2em;
-  -webkit-margin-after: 0;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.8em;
   color: #008B8B;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  font-size: 2.3em;
+}
+
+h2 {
+  font-family: 'Oxygen', sans-serif;
+/*  color: #2F4F4F; *//* dark green */
+  color: #40D0D0;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.4em;
+  font-size: 1.7em;
+}
+
+h3 {
+  color: #20B2AA;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.4em;
+  font-size: 1.3em;
+}
+
+h4 {
+  color: #008080;
+  -webkit-margin-before: 0.2em;
+  -webkit-margin-after: 0.4em;
+  font-size: 1.1em;
 }
 
 p {
   -webkit-margin-before: 0;
   -webkit-margin-after: 1em;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 0.9em;
+  font-size: 1.1em;
   color: #2F4F4F;
+  line-height: 130%;
 }
 
+/* links */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #ADFF2F;
+}
+
+/* 1 info section */
+
 #main-logo {
-  width: 100%;
+  width: 80%;
+  padding-top: 10px;
+  margin: 0 10%;
 }
 
 #pyramid {
@@ -55,12 +98,21 @@ p {
   float: right;
 }
 
+#info {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+
+/* 2 map section */
+
 #map {
   margin-top: 1em;
+  width: 80%;
 }
 
 #arrow-line {
-  margin: 1em 0;
+  margin: 0 0 0.5em 0;
   width: 100%;
 }
 
@@ -68,35 +120,13 @@ p {
   width: 100%;
 }
 
-h2 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #2F4F4F;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-}
+/* 3 speakers section */
 
-h3 {
-  color: #20B2AA;
-  -webkit-margin-before: 0.5em;
-  -webkit-margin-after: 0.4em;
-}
-
-h4 {
-  color: #008080;
-  -webkit-margin-before: 0.2em;
-  -webkit-margin-after: 0.4em;
-}
-
-button {
-  border: none;
-  background-color: #90EE90;
-}
-
-/* speakers section styling */
 .speaker {
   max-width: 40%;
   display: inline-block;
-  margin: 0 2em 2em 0;
+  margin: 0 2em 1em 0;
+  vertical-align: top;
 }
 
 .speaker img {
@@ -104,31 +134,41 @@ button {
   border-radius: 3em;
 }
 
-/* program section styling */
+/* 4 program section */
+
+#program h3 {
+  margin: 0.5em 0 0.3em 0;
+}
+
+#program p {
+  -webkit-margin-after: 0;
+  font-size: 1em;
+}
+
 .talk-bubble {
   background-color: #90EE90;
-  width: 12em;
-  height: 8em;
+  width: 13em;
   border-radius: 3em;
   padding: 2px;
-  margin: 1em 2em;
+  margin: 0 2em 2em 0;
   display: inline-block;
-  border: 0.3em solid white;
+  vertical-align: top;
+  border: 0.3em solid #20B2AA;
 }
 
 .talk-bubble-2 {
   background-color: #40E0D0;
-  width: 12em;
-  height: 8em;
+  width: 13em;
   border-radius: 3em;
   padding: 2px;
-  margin: 1em 2em;  
+  margin: 0 2em 2em 0;  
   display: inline-block;
-  border: 0.3em solid white;
+  vertical-align: top;
+  border: 0.3em solid #20B2AA;
 }
 
 .inner {
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
 }
 
@@ -136,7 +176,8 @@ button {
   max-width: 100%;
 }
 
-/* modal styling */
+/* 5 modal  */
+
 #modal{
   top: 0;
   left: 0;
@@ -171,19 +212,31 @@ button {
   width: 36em;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
 
-a:hover {
-  color: #20B2AA;
+/* form */
+
+form {
+  margin: 2em 0;
 }
 
 input {
-  width: 42%;
+  width: 40%;
+  line-height: 160%;
 }
+
+button {
+  border: none;
+  background-color: #90EE90;
+  padding: 6px 20px;
+}
+
+/* footer */
 
 footer {
   margin: 2em 0 4em 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1em;
 }

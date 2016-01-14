@@ -1,12 +1,13 @@
 // function to open and close modal with button and X
 
-$("#open-modal").on('click', function() {
+$("#open-modal").on('click', function(event) {
+  event.preventDefault(); // stop form from trying to make server request
   $("input").val("");  // clear text from input form
   $("#modal").toggle();
 });
 
 
-$("#close-modal").on("click", function(){
+$("#close-modal").on("click", function() {
   $("#modal").toggle();
 });
 

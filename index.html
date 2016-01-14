@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 
   <meta charset="UTF-8">
 
@@ -10,8 +10,9 @@
 
   <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
 
-  <link rel="stylesheet" href="stylesheets/style.css">
   <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+
 
 </head>
 
@@ -20,33 +21,50 @@
   <nav id='nav_box'>
     <ul class='nav_links'>
       <li><a href="#main-logo">top</a></li>
+      <li><a href="#2-map">location</a></li>
       <li><a href="#3-speakers">speakers</a></li>
-      <li><a href="#4-program">program</a></li>
+      <li><a href="#program">program</a></li>
       <li><a href="#5-register">register</a></li>
     </ul>
   </nav>
 
+<div id="modal">
+  <div class="modal-content">
+    <span id="close-modal">X</span>
+    <div class="modal-body">
+      <img src="images/WDI-modal.svg">
+    </div>
+  </div>
+</div>
+
  <div id="contents">
   
   <banner>
-    <img src="images/WDI-conf-logo.png" id="main-logo" alt="WDI-conf">
+    <img id="main-logo" src="images/WDIconf_logo.svg"  alt="WDI-conf">
   </banner>
       
-    <section id="1-info">
+
+    <section id="info">
+
       <span>
-        <h1>WDI – a conference of tech ideas</h1>
+        <h1>WDIconf – a conference of ideas</h1>
         <img src="images/pyramid.png" id="pyramid" alt="WDI-conf">
       </span>
-      <h3>when: friday 11 december 2015</h3>
-      <h3>where: general assembly, level 12A, 45 william street, melbourne</h3>
-      <a href="#4-program"><h3>program</h3></a>  <a href="#5-register"><h3>register</h3></a>
+
+      <h2>when: friday 11 december 2015</h2>
+      <h2>where: general assembly, 12A/45 william street, melbourne</h2>
+      <a href="#4-program"><h2>full program here</h2></a>  
+      <a href="#5-register"><h2>register for WDIconf</h2></a>
+
     </section>
 
   <div id="arrow-line">
     <img id="arrows" src="images/arrow-line.svg">
   </div>
 
-    <section id="2-join-map">
+
+
+    <section id="2-map">
       <h1>Join us for 11 short tech talks at General Assembly!</h1>
 
       <div id="map">
@@ -55,26 +73,31 @@
 
     </section>
 
+
   <div id="arrow-line">
     <img id="arrows" src="images/arrow-line.svg">
   </div>
 
+
+
     <section id="3-speakers">
+
       <div>
-        <h1>Speakers / talks</h1>
+        <h1>Speakers & talks</h1>
       </div>
+
       <div class="speaker">
         <img src="images/speakers-headshots/ashton.png" class="headshot" alt="ashton">
         <h2>Minecraft Ninja</h2>
         <h3>Ashton Sobell</h3>    
-        <p>This was not an encouraging opening for a conversation. Alice replied, rather shyly, 'I—I hardly know, sir, just at present—at least I know who I WAS when I got up this morning.'</p>
+        <p>Secrets to getting the ultimate high score, building your own palace pyramid, and catching all the pigs for your own farm.</p>
       </div>   
 
       <div class="speaker">
         <img src="images/speakers-headshots/aviel.png" class="headshot" alt="aviel">
-        <h2>Clients</h2>
+        <h2>10 tips for work</h2>
         <h3>Aviel Goh</h3>    
-        <p>Aviel will talk about his experiences and tips on working with clients.</p>
+        <p>Aviel will talk about his experiences and tips on working in a corporate organisation.</p>
       </div>
 
       <div class="speaker">
@@ -93,7 +116,7 @@
 
       <div class="speaker">
         <img src="images/speakers-headshots/bono.png" class="headshot" alt="asep">
-        <h2>Life Model From Waterfall to Agile</h2>
+        <h2>How to hack a website</h2>
         <h3>Asep Norzai</h3>    
         <p>Spending 50% of your time on planning and design or get progressing every sprint? That's your choice!</p>
       </div>
@@ -102,15 +125,14 @@
         <img src="images/speakers-headshots/helen.png" class="headshot" alt="helen">
         <h2>The art of procrastination</h2>
         <h3>Helen Habakuk</h3>    
-        <p>Ivan brings his signature crazy style to the technology and philosophy of fine coffee sourcing, brewing, and tasting.</p>
+        <p>Helen demonstrates her app, which makes procrastinating much more fun and takes away any guilt from not being productive.</p>
       </div>
 
       <div class="speaker">
         <img src="images/speakers-headshots/greg.png" class="headshot" alt="greg">
-        <h2>Code a 'Jumpy Piranha' game in 10 minutes</h2>
+        <h2>Code a 'Jumpy Piranha' game</h2>
         <h3>Gregory Fernandes</h3>    
-        <p>Greg is a newbie himself, and he will demo how to code a game like Flappy Bird, the game that earned the creator around $50,000 per day. The demo will be a few minutes, but enough to get you rolling like a cannon ball.</p>
-
+        <p>Greg will demo how to code a game like Flappy Bird (which earned the creator around $50,000 per day). The demo take 10 minutes, but will get you rolling like a cannon ball.</p>
       </div>
 
       <div class="speaker">
@@ -122,32 +144,35 @@
 
       <div class="speaker">
         <img src="images/speakers-headshots/ravi.png" class="headshot" alt="ravi">
-         <h2>Ravi blue and other css tricks</h2> 
+         <h2>Ravi blue – css tricks</h2> 
          <h3>Ravi Chada</h3>    
         <p>But when you have to turn into a chrysalis—you will some day, you know—and then after that into a butterfly</p>
       </div>
 
       <div class="speaker">
         <img src="images/speakers-headshots/kylie.png" class="headshot" alt="kylie">
-         <h2>Red bean matcha cake</h2> 
+         <h2>Having an open mind</h2> 
          <h3>Kylie Sy</h3>    
-        <p>Alice; 'but when you have to turn into a chrysalis—you will some day, you know—and then after that into a butterfly, I should think you'll feel it a little queer, won't you?</p>
+        <p>How to stay humble, make the most of opportunities, and keep learning your whole life.</p>
       </div>              
 
       <div class="speaker">
         <img src="images/speakers-headshots/toby.png" class="headshot" alt="toby">
-         <h2>Red bean matcha cake</h2> 
+         <h2>Rationality</h2> 
          <h3>Toby Letcher</h3>    
-        <p>Well, perhaps you haven't found it so yet,' said Alice; 'but when you have to turn into a chrysalis—you will some day, you know—and then after that into a butterfly, I should think you'll feel it a little queer, won't you?</p>
+        <p>Toby introduces several theories of decision making and heuristics. He will cover cognitive fallacies and behavioral economics.</p>
       </div>
 
     </section>
+
 
   <div id="arrow-line">
     <img id="arrows" src="images/arrow-line.svg">
   </div>
 
-    <section id="4-program">
+
+
+    <section id="program">
 
     <div id="program header">
       <h1>WDIconf program</h1>      
@@ -164,18 +189,27 @@
     <div class="talk-bubble-2">
       <div class="inner">
       <h3>Aviel Goh</h3>
-      <h4>Clients</h4>   
+      <h4>10 tips for work</h4>   
       <p>09:40–09:50</p>
       </div>
     </div>
 
-    <div class="talk-bubble-2">
+    <div class="talk-bubble">
       <div class="inner">
       <h3>Greg Fernandes</h3>
       <h4>Code a 'Jumpy Piranha' game in 10</h4>   
       <p>09:50–10:00</p>
       </div>
     </div>
+
+    <div class="talk-bubble-2">
+      <div class="inner">
+      <h3>Helen Habakuk</h3>
+      <h4>The art of procrastination</h4>   
+      <p>10:30–10:40</p>
+      </div>
+    </div>
+
 
     <div class="talk-bubble">
       <div class="inner">
@@ -185,13 +219,6 @@
       </div>
     </div>
 
-    <div class="talk-bubble">
-      <div class="inner">
-      <h3>Helen Habakuk</h3>
-      <h4>The art of procrastination</h4>   
-      <p>10:30–10:40</p>
-      </div>
-    </div>
 
     <div class="talk-bubble-2">
       <div class="inner">
@@ -201,15 +228,15 @@
       </div>
     </div>
 
-    <div class="talk-bubble-2">
+    <div class="talk-bubble">
       <div class="inner">
       <h3>Ravi Chada</h3>
-      <h4>Ravi blue and other CSS tricks</h4>   
+      <h4>Ravi blue – CSS tricks</h4>   
       <p>10:50–11:00</p>
       </div>
     </div>
 
-      <div class="talk-bubble">
+      <div class="talk-bubble-2">
       <div class="inner">
       <h3>Kylie Sy</h3>
       <h4>Having an open mind</h4>   
@@ -220,7 +247,7 @@
     <div class="talk-bubble">
       <div class="inner">
       <h3>Toby Letcher</h3>
-      <h4>Hacking for humanity</h4>   
+      <h4>Rationality and heuristics</h4>   
       <p>11:10–11:20</p>
       </div>
     </div>
@@ -228,12 +255,12 @@
     <div class="talk-bubble-2">
       <div class="inner">
       <h3>Asep Norzai</h3>
-      <h4>The art of procrastination</h4>   
+      <h4>How to hack a website</h4>   
       <p>11:20–11:30</p>
       </div>
     </div>
 
-    <div class="talk-bubble-2">
+    <div class="talk-bubble">
       <div class="inner">
       <h3>Ashton Sobell</h3>
       <h4>Minecraft Ninja</h4>   
@@ -243,18 +270,12 @@
 
     </section>
 
+
   <div id="arrow-line">
     <img id="arrows" src="images/arrow-line.svg">
   </div>
 
-  <div id="modal">
-    <div class="modal-content">
-    <span id="close-modal">X</span>
-    <div class="modal-body">
-      <img src="images/WDI-modal.png">
-    </div>
-  </div>
-  </div>
+  
 
     <section id="5-register">
       <h1>Register for WDIconf</h1>
@@ -267,13 +288,15 @@
 
   <footer id="footer">
 
+
   <div id="arrow-line">
     <img id="arrows" src="images/arrow-line.svg">
   </div>
 
-    <h4>proudly brought to you by the following generous sponsors –</h4>
-    <p>domaine chandon | daiso melbourne | seven seeds coffee | purple peanuts cafe</p>
-    <small>&copy;2015 Keryn Robinson</small>
+
+    <h4>proudly brought to you by our generous sponsors –</h4>
+    <p>domaine chandon | apple | seven seeds coffee | purple peanuts cafe</p>
+    <small>&copy; Keryn Robinson 2015</small>
 
   </footer>
 
